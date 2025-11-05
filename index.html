@@ -5,21 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi WebApp Embebida</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f2f2f2;
-      font-family: sans-serif;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* evita scroll */
     }
     iframe {
-      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
       height: 100vh;
-      border: 2px solid #ccc;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border: none;
     }
   </style>
 </head>
@@ -31,4 +30,3 @@
   </iframe>
 </body>
 </html>
-
